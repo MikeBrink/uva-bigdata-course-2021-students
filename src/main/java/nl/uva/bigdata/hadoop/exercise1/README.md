@@ -4,8 +4,8 @@
 
 Counting words in a distributed manner is the "hello world" application of Big Data systems. Have a look at the [WordCount](WordCount.java) class and run it in both local and cluster mode with the following unit tests.
 ```
-mvn -Dtest=nl.uva.bigdata.hadoop.exercise1.WordCountLocalTest test
-mvn -Dtest=nl.uva.bigdata.hadoop.exercise1.WordCountClusterTest test
+./run_docker.sh mvn -Dtest=nl.uva.bigdata.hadoop.exercise1.WordCountLocalTest test
+./run_docker.sh mvn -Dtest=nl.uva.bigdata.hadoop.exercise1.WordCountClusterTest test
 ```
 
 ## Task 2: Serialization
@@ -16,7 +16,7 @@ Implement the corresponding methods in the [NumberPairWritable](NumberPairWritab
 
 _You can test your implementation with the following unit test:_
 ```
-mvn -Dtest=nl.uva.bigdata.hadoop.exercise1.NumberPairWritableTest test
+./run_docker.sh mvn -Dtest=nl.uva.bigdata.hadoop.exercise1.NumberPairWritableTest test
 ```
 
 ## Task 3: Document Indexing with MapReduce
@@ -25,8 +25,8 @@ The main reason why MapReduce was designed has been to build indexes of the web 
 
 _You can test your implementation with the following unit tests:_
 ```
-mvn -Dtest=nl.uva.bigdata.hadoop.exercise1.InvertedIndexLocalTest test
-mvn -Dtest=nl.uva.bigdata.hadoop.exercise1.InvertedIndexClusterTest test
+./run_docker.sh mvn -Dtest=nl.uva.bigdata.hadoop.exercise1.InvertedIndexLocalTest test
+./run_docker.sh mvn -Dtest=nl.uva.bigdata.hadoop.exercise1.InvertedIndexClusterTest test
 ```
 
 ## Task 4: Joins with MapReduce
@@ -35,6 +35,6 @@ Next, we will implement a join in MapReduce to join together a collection of [bo
 
 _You can test your implementation with the following unit tests:_
 ```
-mvn -Dtest=nl.uva.bigdata.hadoop.exercise1.BookAndAuthorMapSideJoinLocalTest test
-mvn -Dtest=nl.uva.bigdata.hadoop.exercise1.BookAndAuthorMapSideJoinClusterTest test
+./run_docker.sh mvn -Dtest=nl.uva.bigdata.hadoop.exercise1.BookAndAuthorMapSideJoinLocalTest test
+./run_docker.sh mvn -Dtest=nl.uva.bigdata.hadoop.exercise1.BookAndAuthorMapSideJoinClusterTest test
 ```

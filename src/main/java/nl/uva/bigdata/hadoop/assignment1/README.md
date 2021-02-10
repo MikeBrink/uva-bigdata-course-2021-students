@@ -12,7 +12,7 @@ The class [BooksWritable](BooksWritable.java) manages an array of [Book](Book.ja
 
 _You can test your implementation with the following unit test:_
 ```
-mvn -Dtest=nl.uva.bigdata.hadoop.assignment1.BooksWritableTest test
+./run_docker.sh mvn -Dtest=nl.uva.bigdata.hadoop.assignment1.BooksWritableTest test
 ```
 
 ## Task 2: Counting words with MapReduce [4 + 2 points]
@@ -21,8 +21,8 @@ Implement distributed word counting in Hadoop via the [FilteringWordCount](Filte
 
 _You can test your implementation with the following unit tests:_
 ```
-mvn -Dtest=nl.uva.bigdata.hadoop.assignment1.FilteringWordCountLocalTest test
-mvn -Dtest=nl.uva.bigdata.hadoop.assignment1.FilteringWordCountClusterTest test
+./run_docker.sh mvn -Dtest=nl.uva.bigdata.hadoop.assignment1.FilteringWordCountLocalTest test
+./run_docker.sh mvn -Dtest=nl.uva.bigdata.hadoop.assignment1.FilteringWordCountClusterTest test
 ```
 
 ## Task 2: Aggregating measurements with MapReduce [4 + 2 points]
@@ -31,8 +31,8 @@ Your next task is to implement a MapReduceJob in the class [AverageTemperaturePe
 
 _You can test your implementation with the following unit tests:_
 ```
-mvn -Dtest=nl.uva.bigdata.hadoop.assignment1.AverageTemperaturePerMonthLocalTest test
-mvn -Dtest=nl.uva.bigdata.hadoop.assignment1.AverageTemperaturePerMonthClusterTest test
+./run_docker.sh mvn -Dtest=nl.uva.bigdata.hadoop.assignment1.AverageTemperaturePerMonthLocalTest test
+./run_docker.sh mvn -Dtest=nl.uva.bigdata.hadoop.assignment1.AverageTemperaturePerMonthClusterTest test
 ```
 
 
@@ -42,6 +42,6 @@ The final task is to implement a join in MapReduce in the class [BookAndAuthorRe
 
 _You can test your implementation with the following unit tests:_
 ```
-mvn -Dtest=nl.uva.bigdata.hadoop.assignment1.BookAndAuthorReduceSideJoinLocalTest test
-mvn -Dtest=nl.uva.bigdata.hadoop.assignment1.BookAndAuthorReduceSideJoinClusterTest test
+./run_docker.sh mvn -Dtest=nl.uva.bigdata.hadoop.assignment1.BookAndAuthorReduceSideJoinLocalTest test
+./run_docker.sh mvn -Dtest=nl.uva.bigdata.hadoop.assignment1.BookAndAuthorReduceSideJoinClusterTest test
 ```

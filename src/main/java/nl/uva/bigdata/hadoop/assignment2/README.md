@@ -12,8 +12,8 @@ Implement a sparse vector backed by a hashmap in the class [SparseVector](Sparse
 
 _You can test your implementation with the following unit tests:_
 ```
-mvn -Dtest=nl.uva.bigdata.hadoop.assignment2.SparseMatrixVectorMultiplicationLocalTest test
-mvn -Dtest=nl.uva.bigdata.hadoop.assignment2.SparseMatrixVectorMultiplicationClusterTest test
+./run_docker.sh mvn -Dtest=nl.uva.bigdata.hadoop.assignment2.SparseMatrixVectorMultiplicationLocalTest test
+./run_docker.sh mvn -Dtest=nl.uva.bigdata.hadoop.assignment2.SparseMatrixVectorMultiplicationClusterTest test
 ```
 
 ## Task 2: Implement your own MapReduce engine [5 points]
@@ -22,7 +22,7 @@ In this task, we stop using Hadoop and implement our own (local) MapReduce engin
 
 _You can test your implementation with the following unit test:_
 ```
-mvn -Dtest=nl.uva.bigdata.hadoop.assignment2.MapReduceEngineTest test
+./run_docker.sh mvn -Dtest=nl.uva.bigdata.hadoop.assignment2.MapReduceEngineTest test
 ```
 
 ## Task 3: Implement Distributed Linear Regression [5 points]
@@ -31,5 +31,5 @@ Your final task is to implement distributed linear regression (as discussed in t
 
 _You can test your implementation with the following unit test:_
 ```
-mvn -Dtest=nl.uva.bigdata.hadoop.assignment2.DistributedLinearRegressionTest test
+./run_docker.sh mvn -Dtest=nl.uva.bigdata.hadoop.assignment2.DistributedLinearRegressionTest test
 ```
